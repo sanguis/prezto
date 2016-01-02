@@ -11,3 +11,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export PATH=$PATH:~/.composer/vendor/bin
+# aliases
+alias vi="vim -g"
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
