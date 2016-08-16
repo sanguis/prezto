@@ -13,6 +13,18 @@ fi
 # Customize to your needs...
 export PATH=$PATH:~/.composer/vendor/bin
 # aliases
-alias vi="vim -g"
+alias vi="vim -g --servername VIM4"
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
+export PATH="$HOME/.rvm/bin:$HOME/.rvm/rubies/default/bin:$PATH:" # Add RVM to PATH for scripting
+
+
+# manually setting rvm requirements
+#export GEM_HOME=$HOME/.gem
+#export GEM_PATH=$HOME/.gem
+#
+# include local overrides
+
+if [[ -s "$HOME/.zshrc_user" ]]; then
+  source "$HOME/.zshrc_user"
+fi
