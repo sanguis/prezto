@@ -19,7 +19,7 @@ zstyle ':prezto:*:*' color 'yes'
  zstyle ':prezto:load' zmodule 'attr' 'stat'
 
 # Set the Zsh functions to load (man zshcontrib).
-# zstyle ':prezto:load' zfunction 'zargs' 'zmv'
+ zstyle ':prezto:load' zfunction 'zargs' 'zmv'
 
 # Set the Prezto modules to load (browse modules).
 # The order matters.
@@ -37,9 +37,10 @@ zstyle ':prezto:load' pmodule \
   'node' \
   'python' \
   'haskell' \
- 'syntax-highlighting' \
+  'syntax-highlighting' \
   'rsync' \
-  'prompt'
+  'prompt' \
+  'history'
 
 #
 # Autosuggestions
@@ -77,7 +78,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the query found color.
-  style ':prezto:module:history-substring-search:color' found ''
+  zstyle ':prezto:module:history-substring-search:color' found ''
 
 # Set the query not found color.
 # zstyle ':prezto:module:history-substring-search:color' not-found ''
