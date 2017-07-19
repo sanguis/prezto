@@ -37,9 +37,12 @@ zstyle ':prezto:load' pmodule \
   'node' \
   'python' \
   'haskell' \
- 'syntax-highlighting' \
+  'syntax-highlighting' \
   'rsync' \
-  'prompt'
+  'prompt' \
+  'ruby' \
+  'node' \
+  'ssh'
 
 
 #
